@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+    <style>
+        p{
+           font-size: 18px;
+       }
+       a{
+           color: azure;
+           background-color: rgba(127, 255, 212, 0.466);
+           padding: 10px;
+           text-decoration: none;
+       }
+   </style>
+</head>
+<body style="background-color: #000; color: antiquewhite;">
+    <h3>20 example of javaScript by using function</h3>
+    
+        <!--1 example one start here -->
+        <p>ex:1</p>
+        <script>
+            // useing function 
+            
+    
+            // add
+            function addition(num1, num2){
+                var result = num1 + num2;
+                document.write("addition "+ result + "</br>");
+    
+            }
+    
+            // sub
+            function substraction(num1, num2){
+                var result = num1-num2;
+                document.write("substraction "+ result + "</br>");
+            }
+    
+            // multiple
+            function multiple(num1, num2){
+                var result = num1 * num2;
+                document.write("multiple "+ result + "</br>");
+            }
+    
+            // divition
+            function divide(num1 , num2){
+                var result = num1 / num2;
+                document.write("divition "+ result + "</br>");
+            }
+    
+            // modulus
+            function modulus(num1, num2){
+                var result = num1 % num2;
+                document.write("modulus "+ result + "</br>");
+    
+            }
+            var num1 =parseFloat(prompt("first number="));
+            var num2 =parseFloat(prompt("second number= "));
+    
+            addition(num1, num2);
+            substraction(num1, num2);
+            multiple(num1, num2);
+            divide(num1, num2);
+            modulus(num1, num2);
+            document.write("</br>")
+    
+        </script>
+        <!--1 example one ends here -->
+    
+        <!-- -------------------or---------------------- -->
+        <p>ex: 2</p>
+        <script>
+            var num1 = parseFloat(prompt("enter EX: 2 first number"));
+            var num2 =parseFloat(prompt("enter EX: 2 second number"));
+    
+            // addition
+            (function addition(num1, num2){
+                var result = num1 + num2;
+                document.write("addition  =" + result + "</br>");
+            })(num1, num2);
+    
+            // substraction
+            (function substraction(num1,num2){
+                var result = num1 - num2;
+                document.write("substraction = "+ result + "</br>");
+            })(num1, num2);
+    
+            // multiple
+            (function multiple(num1, num2){
+                var result = num1 * num2;
+                document.write("multiple  ="+ result + "</br>");
+            })(num1, num2);
+    
+            // devide
+            (function devide(num1, num2){
+                var result = num1 / num2;
+                document.write("devided =" +result + "</br>");
+            })(num1, num2);
+    
+            // modulus
+            (function modulus (num1 , num2){
+                var result = num1 % num2;
+                document.write("modulus = "+ result + "</br>");
+            })(num1, num2)
+    
+    
+        </script>
+        
+    
+    
+</body>
+</html>

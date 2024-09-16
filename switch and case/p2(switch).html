@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch, case, break, default methods</title>
+    <style>
+         p{
+            font-size: 18px;
+        }
+        a{
+            color: azure;
+            background-color: rgba(127, 255, 212, 0.466);
+            padding: 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body style="background-color: #000; color: antiquewhite;">
+    <h3>20 example of javaScript by using Switch methods</h3>
+    <p>1. check even or odd number (switch)</p>
+
+    <p>2. check positive negetive or Zero</p>
+
+    <p> 3 check grade calculation </p>
+   
+
+    <p> 4 check Age Calculation</p>
+    
+
+    <p>5 check Voting Eligibility</p>
+    <script>
+        //  using if else methods control system
+        /*let checkVote = parseFloat(prompt('enter Your Age for Vote elegibility :'));
+        if(checkVote <= 17){
+            console.log("not eligible");
+        }else{
+            console.log("elegible for vote");17
+        }*/
+
+         //  using Switch methods control system
+        /*let checkVote = parseFloat(prompt('enter Your Age for Vote elegibility :'));
+
+        switch(true){
+            case(checkVote <= 17):
+            console.log("not elegible for vote");
+            break;
+            default: 
+            console.log("elegible for vote");
+        }
+
+    </script>
+
+    <p>6 check Days of Week</p>
+    <script>
+        //  using if else methods control system
+        /* let checkDays = parseFloat(prompt('enter a number of Day :'));
+        if(checkDays === 1 || checkDays === 8){
+            console.log('Sutarday');
+        }else if(checkDays === 2 || checkDays === 9){
+            console.log('Sunday');
+        }else if(checkDays === 3 || checkDays === 10){
+            console.log('Monday');
+        }else if(checkDays === 4 || checkDays === 11){
+            console.log('Tuesday');
+        }else if(checkDays === 5 || checkDays === 12){
+            console.log('Wednessday');
+        }else if(checkDays === 6 || checkDays === 13){
+            console.log('Thrusday');
+        }else{
+            console.log('Friday');
+        }*/
+
+        //  using switch methods control system
+        /*let checkDays = parseFloat(prompt('enter a number of Day(JULY 2024) :'));
+
+        switch(checkDays){
+            case 1:
+            case 8:
+            case 15:
+            case 22:
+            case 29:
+                console.log("saturday");
+            break;
+            case 2:
+            case 9:
+            case 16:
+            case 23:
+            case 30:
+                console.log("sunday");
+            break;
+            case 3:
+            case 10:
+            case 17:
+            case 24:
+            case 31:
+                console.log("monday");
+            break;
+            case 4:
+            case 11:
+            case 18:
+            case 25:
+                console.log("thuesday");
+            break;
+            case 5:
+            case 12:
+            case 19:
+            case 26:
+                console.log("wednesday");
+            break;
+            case 6:
+            case 13:
+            case 20:
+            case 27:
+                console.log("thrusday");
+            break;
+            default:
+                console.log("Friday");
+
+            
+        }
+
+
+    </script>
+
+    <p> 7 check Leap Year</p>
+    <script>
+        //  using if else methods control system
+
+       /*let checkLeapYear = parseFloat(prompt('enter Year for checking Leap Year :'));
+
+       if(checkLeapYear %4 === 0){
+        console.log('Leap Year')
+       }else{
+        console.log('Not a leap Year')
+       }
+        */
+
+        //using switch methods control system
+        /*let checkLeapYear = parseFloat(prompt('enter Year for checking Leap Year :'));
+        switch(true){
+            case (checkLeapYear %4 === 0):
+                console.log("Leap year");
+                break;
+            default:
+                console.log("not leap year");
+
+        }
+    </script>
+
+    <p>8 password strength Check</p>
+    <script>
+        //  using if else methods control system
+        /*let pass = prompt("enter password");
+        let passInput = pass.length;
+
+        if(passInput <= 4){
+            console.log("weak password");
+        }else if(passInput >= 6 && passInput <= 8){
+            console.log("good password");
+        }else{
+            console.log("strong password");
+        }*/
+
+        /*let pass = prompt("enter password");
+        let passInput = pass.length;
+
+        switch(true){
+            case (passInput <= 4):
+                console.log("weak password");
+            break;
+            case (passInput >= 6 && passInput <= 8):
+                console.log("good password");
+            break;
+            default:
+                console.log("strong password");
+
+        }
+
+    </script>
+
+    <p> 9 Calculate arithmetics oparator</p>
+    <script>
+        /*let fnum1 =parseFloat(prompt('Enter First number: '));
+        let fnum2 = parseFloat(prompt('Enter LAst number: '));
+        let oparator = "*";
+
+        switch(oparator){
+            case "+":
+                console.log(fnum1 + fnum2);
+            break;
+            case "-":
+                console.log(fnum1 - fnum2);
+            break;
+            case "*":
+                console.log(fnum1 * fnum2);
+            break;
+            case "/":
+                console.log(fnum1 / fnum2);
+            break;
+            default:
+                console.log("invalid");
+        }
+    </script>
+
+    <p> 10 month days</p>
+    <script>
+        /*let month = parseFloat(prompt("Enter a month number"));
+        switch(month){
+            case 1 :
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                console.log("31 days a month " + "like: January, march, May, July, August, October and December");
+            break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                console.log("30 days a month " + " like: April, June, September" );
+            break;
+            case 2:
+                console.log("28 days a month " + " Only February");
+                break;
+             default:
+                console.log("invalid");   
+
+        }
+    </script>
+
+    <p>11 Traffic light color</p>
+    <script>
+        /*let light = prompt("enter color name= ");
+        switch(light){ // or switch(light.toLowercase())
+            case "red":
+            case "Red":
+            case "RED":
+
+                console.log("STOP");
+            break;
+            case "yellow":
+            case "Yellow":
+            case "YELLOW":
+                console.log("WAIT");
+            break;
+            case "green":
+            case "Green":
+            case "GREEN":
+                console.log("GO");
+            break;
+            default:
+                console.log("invalid color");
+            
+        }
+
+    </script>
+
+    <p>12 charecter check Alphabet or Number</p>
+    <script>
+        /*let alphabet = prompt("Type an Alphabet= ");
+        switch(true){
+            case (alphabet >="A" && alphabet <= "Z"):
+                console.log("Uppercase letter");
+                break;
+            case (alphabet >="a" && alphabet <= "z"):
+                console.log("Lowercase letter");
+                break;
+            case (alphabet >="0" && alphabet <= "9"):
+                console.log("Decimal number");
+                break;
+            default:
+                console.log("invalid" );
+
+        }
+    </script>
+
+    <p>13 check Dividable number (2, 3 , 5) </p>
+    <script>
+        /*let number = parseFloat(prompt("Enter a number"));
+        switch(true){
+            case (number %2 === 0):
+                console.log("divided by 2");
+                break;
+            case (number %3 === 0):
+                console.log("divided by 3");
+                break;
+            case (number %5 === 0):
+                console.log("divided by 5");
+                break;
+            default:
+                console.log("Not divisible by 2, 3 5");
+        }
+    </script>
+
+    <p> 14 find vowel and consonant letter among the alphabet </p>
+    <script>
+        /*let alphabet = prompt("Write an alphabet= ");
+        switch(alphabet.toLowerCase()){
+            case "a":
+            case "e":
+            case "i":
+            case "0":
+            case "u":
+                console.log("This is vowel");
+                break;
+            default:
+                console.log("this is consonant");
+
+        }
+    </script>
+    <p> 15 find random number</p>
+    <script>
+        let number = prompt("enter a number");
+        let guessNumber = Math.floor(Math.random() * 3)+ 1;
+        switch(number){
+            case guessNumber:
+                console.log("correct");
+                break;
+            default:
+                console.log("not coreect. the correct number was " + guessNumber);
+        }
+
+    </script>
+    
+
+    <a href="p1(if else).html">Previous page</a>
+    <a href="practice3.html">next page</a>
+    <script src="p2.js"></script>
+</body>
+</html>

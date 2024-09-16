@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+    <style>
+        p{
+           font-size: 18px;
+       }
+       a{
+           color: azure;
+           background-color: rgba(127, 255, 212, 0.466);
+           padding: 10px;
+           text-decoration: none;
+       }
+   </style>
+</head>
+<body style="background-color: #000; color: antiquewhite;">
+    <h3>20 example of javaScript by using object methods</h3>
+    <p>1. calculate student data on object methods. by using constractor function</p>
+    <script>
+        /*function Student (name, group, gpa, subject ){
+            this.name = name;
+            this.group = group;
+            this.gpa = gpa;
+            this.subject = subject;
+
+            this.result = function(){
+                console.log(this.name);
+                console.log(this.group);
+                console.log(this.gpa);
+                console.log(this.subject);
+
+            }
+        }
+
+
+        let student1 = new Student ("sumit", "commerce", 3.92, ["accounting", "business"] );
+        let student2 = new Student ("rana", "science", 4.00, ["physics", "mathmethics"] );
+        let student3 = new Student ("bappy", "arts", 3.00, ["social", "sociology"] );
+
+        // console.log(student1);
+        // console.log(student2);
+        // console.log(student3);
+        
+        student1.result();
+        student2.result();
+        student3.result();
+
+    </script>
+
+    <p>2. create number game in object methods. by using loop and condition</p>
+    <script>
+
+        /*let wonNumber = 0;
+        let lostNumber = 0;
+
+       for(let i =0; i<=4; i++){
+        let guessNumber = parseInt(prompt("Enter a number ="));
+        let randomNumber = Math.floor(Math.random () *5) + 1;
+
+        if(guessNumber === randomNumber){
+            console.log("You WOn");
+            wonNumber++;
+        }else{
+            console.log("You Lost");
+            lostNumber++;
+        }
+       }
+       console.log("Total number of you won" + wonNumber  );
+       console.log("Total number of you lost" + lostNumber );
+
+    </script>
+    <p>3. create a lottery chart in object methods. by using loop and condition</p>
+
+    <script>
+        /*let lottery = parseInt(prompt("enter a number 1-3 number = "));
+        let lotteryNumber = Math.floor(Math.random()*3 ) + 1;
+
+        if(lottery === lotteryNumber){
+            console.log("you have WOn");
+        }else{
+            console.log("you lost");
+        }
+    </script>
+    <p>4. Date object</p>
+    <script>
+        let date = new Date();
+        document.write("Date =" + date + "<br>");
+
+        let day = date.getDay();
+        document.write("Day = " + day + "<br>");
+
+        let month = date.getMonth();
+        document.write("Month =" + month + "<br>");
+
+        let year = date.getFullYear();
+        document.write("Year =" + year + "<br>");
+
+        let hour = date.getHours();
+        document.write("hours = " + hour + "<br>")
+
+        let miniute =  date.getMinutes();
+        document.write("minute = "+ miniute + "<br>");
+
+        let time = date.getTime();
+        document.write("time=" + time + "<br>");
+
+        let currentDate = date.getDate();
+        document.write(currentDate)
+
+    
+
+        
+    </script>
+   
+
+    
+</body>
+</html>

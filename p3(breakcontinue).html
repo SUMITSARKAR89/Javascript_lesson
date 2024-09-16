@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>break and continue</title>
+    <style>
+        p{
+           font-size: 18px;
+           color: #fff;
+       }
+       a{
+           color: azure;
+           background-color: rgba(127, 255, 212, 0.466);
+           padding: 10px;
+           text-decoration: none;
+       }
+       body{
+        background-color: #000;
+       }
+   </style>
+</head>
+<body>
+    <p>1. Break for loop</p>
+    <script>
+       /*for(let i = 0; i<= 100; i++){
+        if(i === 10){break;}
+        console.log(i);
+       }
+    </script>
+    <p>2. Nested loop</p>
+    <script>
+        /*for(let a = 0; a <1; a++){
+            for(let b =0; b <1; b++){
+                if(a === 1 && b === 1){
+                    break;
+                }
+                console.log(`a = ${a}, b = ${b}`);
+            }
+        }
+    </script>
+    <p>3. find even and odd number</p>
+    <script>
+        /*for(let i = 0; i<=10; i++){
+            if(i %2 == 0){
+                continue;
+            }
+            console.log(i);
+        }*/
+
+
+       /*for(i = 0; i<=10; i++){
+        if(i % 2 != 0){
+            continue;
+        }
+        console.log(i);
+       }
+
+        
+    </script>
+    <p>4. print a value in array</p>
+    <script>
+       /* let a = [1,2,4,8,9,11];
+        for(let i of a){
+            if( i === 8){
+                break;
+            }
+            console.log(i);
+        }
+    </script>
+    <p>4. print a value in object</p>
+    <script>
+        /*let v = {
+            a:1,
+            b:2,
+            c:3,
+        }
+        for(let i in v){
+            if( i === "c"){
+                break;
+            }
+            console.log(i);
+        }*/
+
+        
+    </script>
+     <p>5. print a value of string</p>
+    <script>
+        let str = "javascript";
+        for(let a = 0; a<str.length; a++){
+            if( str[a] === "s"){
+                break;
+            }
+            console.log(str[a]);
+        }
+    </script>
+</body>
+</html>

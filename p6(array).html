@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array </title>
+    <style>
+        p{
+           font-size: 18px;
+       }
+       a{
+           color: azure;
+           background-color: rgba(127, 255, 212, 0.466);
+           padding: 10px;
+           text-decoration: none;
+       }
+   </style>
+</head>
+<body style="background-color: #000; color: antiquewhite;">
+    <h3>20 example of javaScript by using array methods</h3>
+    <p>1. create array</p>
+    <script>
+        /*const names = ["a", "b", "c", "d", "e"];
+        console.log(names);
+        console.log(names[1]);
+    </script>
+    <p>2. push array </p>
+    <script>
+        /* const names = ["a", "b", "c", "d", "e"];
+        
+         names.push("X");
+         console.log(names);
+
+    </script>
+    <p>3. concat array</p>
+    <script>
+        /*const teamA = ["a", "b", "c", "d", "e"];
+        const teamB = [1, 2, 3, 4, 5];
+        let result = teamA.concat(teamB);
+        console.log(result);
+        console.log(result.join(" # "));
+
+    </script>
+    <p>4. pop array</p>
+    <script>
+        /*const names = [ "a", "b", "c", "d", "e"];
+        names.pop();
+        names.pop("d");
+        console.log(names);
+    </script>
+    <p>5. shift array (pop and shift are alternative of one of another )</p>
+    <!--  -->
+    <script>
+        /*const names = [ "a", "b", "c", "d", "e"];
+        
+        names.shift("c");
+        names.shift();
+
+        console.log(names)
+        
+    </script>
+    <p>6. unshift array (push and unshift are alternative of one of another)</p>
+    <script>
+        /*const names = [ "a", "b", "c", "d", "e"];
+        names.unshift("M");
+        console.log(names)
+        
+    </script>
+    <p>7. splice array</p>
+    <script>
+        /*let names = ['a', 'b', 'c', 'd', 'e'];
+        //names.splice(0,1, 'M', 'N');
+        //names.splice(2, 0, 'M', 'N');
+        names.splice(2, 1, 'M', 'N');
+        console.log(names);
+    </script>
+    <p>8. slice array</p>
+    <script>
+        /*let names = ['a', 'b', 'c', 'd', 'e'];
+        //let newArray = names.slice(0, 1);
+        //let newArray = names.slice(0, 2);
+        let newArray = names.slice(0, 3);
+        console.log(names);
+        console.log(newArray);
+
+    </script>
+    <p>9. sort and reverse array</p>
+    <script>
+        /*let names = ["e", "a", "j", "c", "x", "m"];
+        //names.sort();
+        //names.reverse();
+        console.log(names);
+    </script>
+    <p>10. number sorting array</p>
+    <script>
+        /*let numbers = [25, 10, 99, 2, 50, 9];
+        numbers.sort(function(a, b) {
+            return a-b;
+        })
+        numbers.sort(function(a,b){
+            return b-a;
+        })
+        console.log(numbers)
+    </script>
+    <p>11. find maximum array by using function</p>
+    <script>
+        /*let scores = [10,99,55,1,29,40,5];
+        function maxScrore (){
+            let a = scores[0];
+            for(let i = 0; i<scores.length; i++){
+                if(a < scores[i] ){
+                    a = scores[i]
+                }
+            }
+            return a;
+
+        } 
+        console.log(maxScrore());*/
+
+        /*let scores = [10,99,55,1,29,40,5];
+        function maxScore(a){
+            return Math.max.apply(null, a);
+
+        }
+        console.log(maxScore(scores));
+        
+
+    </script>
+    <p>12. find minimum array by using function</p>
+    <script>
+        /*let scores = [10,99,55,1,29,40,5];
+        function minScore(){
+            let a = scores[0];
+            for(let i =0; i< scores.length; i++){
+                if( a > scores[i]){
+                    a= scores[i]
+                }
+            }
+            return a;
+
+        }
+        console.log(minScore());*/
+
+        /*let scores = [10,99,55,1,29,40,5];
+        function minScore(a){
+            return Math.min.apply(null, a)
+        }
+        console.log(minScore(scores));
+        
+    </script>
+
+    <p>13. find maximum value of student result by using 2dymentional array</p>
+    <script>
+        /*const studentInfo = [
+            ["rakib", 45],
+            ["sakib", 85],
+            ["sumona", 55],
+            ["sakiba", 75],
+            ["setu", 87],
+            ["abid", 32]
+        ];
+
+        function totalResult(studentInfo){
+            let name = studentInfo[0][0];
+            let max = studentInfo[0][1];
+            for(let a = 1; a< studentInfo.length; a++){
+                if(max < studentInfo[a][1]){
+                    max = studentInfo[a][1];
+                    name = studentInfo [a][0];
+
+                }
+            }
+            return max;
+
+        }
+        let studentResult = totalResult(studentInfo);
+        console.log(studentResult);
+
+    </script>
+    <p>13. find minimum value of student result by using 2dymentional array</p>
+    <script>
+        /*const studentInfo = [
+            ["rakib", 45],
+            ["sakib", 85],
+            ["sumona", 55],
+            ["sakiba", 75],
+            ["setu", 87],
+            ["abid", 32]
+        ];
+        function studentResult(studentInfo){
+            let name = studentInfo[0][0];
+            let min = studentInfo[0][1];
+            for(let a = 1; a<studentInfo.length; a++){
+                if(min > studentInfo[a][1]){
+                    min = studentInfo[a][1];
+                    name = studentInfo[a][0];
+                }
+            }
+            return min;
+
+        }
+        let result= studentResult(studentInfo);
+        console.log(result);
+
+    </script>
+
+    <p>how to print an array</p>
+    <script>
+        /*let number = [10, 20, 30, 40, 50];
+        //let sum = 0;
+
+        for(let i = 0; i<5; i++){
+            console.log(number[i]);
+            //sum = sum + number[i]
+        }
+        //console.log(sum);
+    </script>
+    <p>how to take number by user command</p>
+    <script>
+        /*const number = new Array();
+        for(let i =0; i<5; i++){
+            number[i]= parseInt(prompt("enter number"));
+        } 
+
+
+        // let number = [10, 20, 30, 40, 50];
+        let sum = 0;
+        for(let i = 0; i<5; i++){
+            console.log(number[i]);
+            sum = sum + number[i]
+        }
+        console.log(sum);
+        
+    </script>
+    
+</body>
+</html>

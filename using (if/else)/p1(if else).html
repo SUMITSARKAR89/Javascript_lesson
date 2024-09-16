@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If, Else if and else</title>
+    <style>
+        p{
+            font-size: 18px;
+        }
+        a{
+            color: azure;
+            background-color: rgba(127, 255, 212, 0.466);
+            padding: 10px;
+            text-decoration: none;
+        }
+        
+    </style>
+</head>
+<body style="background-color: #000; color: antiquewhite;"> 
+    <h3>20 example of javaScript by using if , else if and else</h3>
+    <p>1. check even or odd number </p>
+    <script>
+        
+
+        //  1. check even or odd number 
+
+        /*let checkEvenOdd = parseFloat(prompt("enter number for checking Even or ODD: "));
+        if (checkEvenOdd %2 === 0){
+            console.log("This is Even number");
+        }else{ 
+            console.log("This is odd number");
+        }*/
+
+        // -----------------ternary operator ----------------
+
+        /*let checkEvenOdd = parseFloat(prompt("enter a number"));
+       let result = (checkEvenOdd %2 === 0) ? "this is even number" : "this is odd number"; 
+       console.log(result);
+
+    </script>
+
+    <p>2. check positive negetive or Zero</p>
+    <script>
+        //  2. check positive negetive or Zero
+        
+        /*
+        let checkpnz = parseFloat(prompt('enter number for checking Positive Or Nagetive:'));
+        if (checkpnz > 0){
+            console.log("this is positive number");
+        }else if (checkpnz < 0){
+            console.log('this is negative number');
+        }else{
+            console.log('this is "0"');
+        }*/
+
+        // -------------------------ternary operator-----------------------
+
+        /*let checkpnz = parseFloat(prompt("enter a number"));
+        let result = checkpnz>0 ? "positive": checkpnz<0 ? "negetive" : "zero";
+        console.log(result);
+
+    </script>
+    
+    <p> 3 check grade calculation </p>
+    <script>
+        //  3 check grade calculation 
+
+        
+        /*let checkGrade = parseFloat(prompt('enter number for calculation Grade :'));
+
+        if(checkGrade < 0 || checkGrade >100){
+            console.log('invalid Grade');
+        }
+        else if (checkGrade >= 80 && checkGrade <= 100){
+            console.log("Grade = A+");
+        }else if( checkGrade >= 70){
+            console.log('Grade = A');
+        }else if( checkGrade >= 60){
+            console.log('Grade = A-');
+        }else if( checkGrade >= 50){
+            console.log('Grade = B');
+        }else if( checkGrade >= 40){
+            console.log('Grade = C');
+        }else if( checkGrade >= 33){
+            console.log('Grade = D');
+        }else{
+            console.log('FAIL');
+        }*/
+
+        // ------------------------ternary operator-------------------- 
+
+        /*let checkGrade = parseFloat(prompt('enter number for calculation Grade :'));
+        let result = (checkGrade < 0 || checkGrade >100 ) ? "invalid" : 
+                    (checkGrade >= 80 && checkGrade <= 100) ? "Grade = A+" : 
+                    (checkGrade >= 70) ? "Grade = A": 
+                    (checkGrade >=60) ? "Grade = A-" : 
+                    (checkGrade>=50) ? "Grade = B": 
+                    (checkGrade>=40) ? "Grade = C": 
+                    (checkGrade>=33) ? "Grade D": "fail";
+
+        document.write(result);
+        
+    </script>
+
+    <p> 4 check Age Calculation</p>
+    <script>
+         //  4 check Age Calculation
+
+         /*
+         let checkAge = parseFloat(prompt('enter Your Age number :'));
+
+         if(checkAge < 13){
+            console.log('Child');
+         }else if(checkAge >= 13 && checkAge < 20){
+            console.log('Teenager');
+         }else if(checkAge >= 20 && checkAge < 30){
+            console.log('Younger');
+         }else if(checkAge >= 30 && checkAge < 50){
+            console.log('Adult');
+         }else if(checkAge >= 50 && checkAge < 90){
+            console.log('Old');
+         }else{
+            console.log('Older');
+         }*/
+
+        //  ----------------ternary operator --------------------- 
+        /*let checkAge = parseFloat(prompt('enter Your Age number :'));
+        let result = (checkAge < 0) ? "invalid": 
+                    (checkAge < 13) ? "Child":
+                    (checkAge >=13 && checkAge <20) ? "teenager":
+                    (checkAge >=20 && checkAge <30) ? "Younger":
+                    (checkAge >=30 && checkAge <50) ? "Adult":
+                    (checkAge >=50 && checkAge <70) ? "Old":
+                    (checkAge >=70 && checkAge<90) ? "Older": "Oldest";
+        document.write(result);
+        
+
+    </script>
+
+    <p>5 check Voting Eligibility</p>
+    <script>
+        //  5 check Voting Eligibility
+
+         
+         /*let checkVote = parseFloat(prompt('enter Your Age for Vote elegibility :'));
+
+         if(checkVote <= 17){
+            console.log('Not eligible for Vote');
+         }else{
+            console.log('You are eligible fot Vote')
+         }*/
+
+        //  ----------------ternary operator ---------------------- 
+
+        /*let checkVote = parseFloat(prompt('enter Your Age for Vote elegibility :'));
+        let result = checkVote <= 17 ? "Not eligible for Vote": "you are eligible for Vote";
+        document.write(result);
+
+    </script>
+
+    <p>6 check Days of Week</p>
+    <script>
+        //  6 check Days of Week
+
+       /* let checkDays = parseFloat(prompt('enter a number of Day :'));
+        if(checkDays === 1 || checkDays === 8){
+            console.log('Sutarday');
+        }else if(checkDays === 2 || checkDays === 9){
+            console.log('Sunday');
+        }else if(checkDays === 3 || checkDays === 10){
+            console.log('Monday');
+        }else if(checkDays === 4 || checkDays === 11){
+            console.log('Tuesday');
+        }else if(checkDays === 5 || checkDays === 12){
+            console.log('Wednessday');
+        }else if(checkDays === 6 || checkDays === 13){
+            console.log('Thrusday');
+        }else{
+            console.log('Friday');
+        }*/
+
+        // --------------------ternary oparator------------------- 
+
+        /*let checkDays = parseFloat(prompt('enter a number of Day :'));
+        let result = (checkDays ===1 || checkDays ===8) ? "Sutarday":
+                    (checkDays ===2 || checkDays ===9) ? "Sunday":
+                    (checkDays ===3 || checkDays ===10) ? "Monday":
+                    (checkDays ===4 || checkDays ===11) ? "tuesday":
+                    (checkDays ===5 || checkDays ===12) ? "wednesday":
+                    (checkDays ===6 || checkDays ===13) ? "thursday":" friday";
+        document.write(result);
+
+    </script>
+
+    <p>7 check Leap Year</p>
+    <script>
+        //  7 check Leap Year
+
+       /*let checkLeapYear = parseFloat(prompt('enter Year for checking Leap Year :'));
+
+       if(checkLeapYear %4 === 0){
+        console.log('Leap Year')
+       }else{
+        console.log('Not a leap Year')
+       }*/
+
+    //    -----------ternary operator---------------- 
+
+    /*let checkLeapYear = parseFloat(prompt('enter Year for checking Leap Year :'));
+    let result = (checkLeapYear %4 === 0) ? "Lead year" : "not a leap year";
+    document.write(result);
+
+    </script>
+
+    <p>8 password strength Check</p>
+    <script>
+        // 8 password strength Check 
+
+        /*let pass = prompt("enter password"); //type any 
+        let passInput = pass.length;
+
+        if(passInput <= 5){
+            console.log('weak Password');
+        }else if(passInput>= 6 && pass.length <= 8){
+            console.log('good password');
+        }else{
+            console.log('strong password');
+        }*/
+
+        // -------------ternary operator------------ 
+
+        /*let pass = prompt("enter password");
+        let passInput = pass.length;
+        let result = (passInput <= 5) ? "weak password": (passInput >=6 && passInput <=8 ) ? "good password" : "strong password";
+        document.write(result);
+
+    </script>
+
+    <p>9 Temparature Check</p>
+    <script>
+        // 9 Temerature check
+        /*let temp = parseFloat(prompt('Enter Temerature degree: '));
+
+        if(temp < 0){
+            console.log('frezzing');
+        }else if(temp >= 0 && temp < 10){
+            console.log('very cold');
+        }else if (temp >= 10 && temp < 22){
+            console.log('cold');
+        }else if (temp >= 22 && temp < 27){
+            console.log('modarate weather');
+        }else if (temp >= 27 && temp < 35){
+            console.log('hot');
+        }else{
+            console.log("very hot");
+        }*/
+
+        // -----------ternary oparator------------ 
+        /*let temp = parseFloat(prompt('Enter Temerature degree: '));
+        let result =(temp <0) ? "frezzing": 
+                    (temp >= 0 && temp <10) ? "very cold":
+                    (temp >= 10 && temp <20) ? " cold":
+                    (temp >= 20 && temp <27) ? " modarate":
+                    (temp >= 27 && temp <35) ? " hot": "very hot";
+        document.write(result);
+
+
+        
+        
+
+    </script>
+
+    <p>10 Traffic light color</p>
+    <script>
+        // 10 Traffic light color
+
+        /*let trafficLight = prompt('Enter Traffic light color name: ');
+        if(trafficLight === 'red'){
+            console.log("STOP");
+        }else if(trafficLight === 'green'){
+            console.log("GO");
+        }else if(trafficLight === 'yellow'){
+            console.log("Wait for sec");
+        }else{
+            console.log('Please Enter valid color like (RED, GREEN and Yellow)');
+        }*/
+
+        // ------------ternry operator----------- 
+
+        /*let trafficLights = prompt('Enter Traffic light color name: ');
+        let trafficLight = trafficLights.toLowerCase();
+        let result = (trafficLight === 'red') ? "STOP" :(trafficLight === 'green') ? "GO":(trafficLight === 'yellow') ? "WAIT" : "invalid";
+        document.write(result); 
+
+    </script>
+    <p>11 charecter check Alphabet or Number</p>
+    <script>
+        // 11 charecter check Alphabet or Number
+
+        /*let charrecter = prompt('Enter Traffic light color name: ');
+       if (charrecter >= "A" && charrecter <= 'Z'){
+        console.log('UpperCase character');
+       }else  if (charrecter >= 'a' && charrecter <= 'z'){
+        console.log('LowerCase character');
+       }else if (charrecter >= '0' && charrecter <= '9'){
+        console.log(' This is Decimal');
+       }else{
+        console.log('Invalid character');
+       }
+    </script>
+    <p>12 check Dividable number (2, 3 , 5) </p>
+    <script>
+        // 12 check Dividable number (2, 3 , 5) 
+
+        /*let devidedNumber =parseFloat(prompt("Enter Your Number"));
+
+        if (devidedNumber % 2 === 0){
+            console.log('diviable by 2');
+        }else if (devidedNumber % 3 === 0){
+            console.log('diviable by 3');
+        }else if (devidedNumber % 5 === 0){
+            console.log('diviable by 5');
+        }else{
+            console.log('not divided');
+        }
+
+       
+    </script>
+    <p>13 Find large number of value among 3 different logical number </p>
+    <script>
+        // 13 Find large number of value among 3 different logical naumber 
+
+        
+        /*let num1 = prompt("Entry number1 : ");
+        let num2 = prompt("Entry number2 : ");
+        let num3 = prompt("Entry number3 : ");
+
+        if (num1>num2 && num1>num3){
+            console.log("large number is : " + num1);
+        }else if (num2>num1 && num2>num3){
+            console.log("large number is : " + num2);
+        }else{
+        console.log("large number is : " + num3);
+        }
+       
+    </script>
+    <p> 14 find vowel and consonant letter among the alphabet </p>
+    <script>
+        // find vowel and consonant letter among the alphabet
+
+        
+        /*let letterType = prompt("type one letter for checking consonant and vowel");
+        letterType= letterType.toLowerCase();
+
+       if(letterType === "a" || letterType === "e" || letterType === "i" || letterType === "o" || letterType === "u"
+        ){
+            console.log('the letter is VOWEL ', letterType);
+        }else{
+            console.log('The letter is CONSONANT' , letterType);
+        }
+       
+    </script>
+
+    <p> 15 spelling digit 1-10 by word </p>
+    <script>
+        // spelling digit 1-10 by word
+
+        
+        /*let spellDigit = prompt("write doen any digit= ");
+
+        if (spellDigit == 0 ){
+            console.log('Zero');
+        }else if (spellDigit == 1 ){
+            console.log('one');
+        }else if (spellDigit == 2 ){
+            console.log('Two');
+        }else if (spellDigit == 3 ){
+            console.log('Three');
+        }else if (spellDigit == 4 ){
+            console.log('Four');
+        }else if (spellDigit == 5 ){
+            console.log('Five');
+        }else if (spellDigit == 6 ){
+            console.log('Six');
+        }else if (spellDigit == 7 ){
+            console.log('Seven');
+        }else if (spellDigit == 8 ){
+            console.log('Eight');
+        }else if (spellDigit == 9 ){
+            console.log('Nine');
+        }else if (spellDigit == 10 ){
+            console.log('Ten');
+        }else{
+            console.log('invalid number"plese type a number under 11"');
+        }
+    </script>
+
+    <script src="ifelse.js"></script>
+
+    <a href="p2(switch).html">Next page</a>
+    
+</body>
+</html>

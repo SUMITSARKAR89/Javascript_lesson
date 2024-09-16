@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="event.css">
+    <title>event listener</title>
+</head>
+<body  onload="bodyOnloar()">
+
+    <h3>Ex: 1</h3>
+    <p>1. onclick methods</p>
+    <button id="my-h2">click me</button>
+    <hr>
+
+
+    <h3>Ex: 2</h3>
+    <p>2. mouse-over</p>
+    <h2 class="h2" >this is bangladesh</h2>
+    <hr>
+
+    <h3>Ex: 3</h3>
+    <p>3. button click</p>
+
+    <p class="head">click the button</p>
+    <button class="btn" style="padding:10px 3%; background-color: red; cursor: pointer;"></button>
+
+
+    <h3>Ex:4</h3>
+    <p id="call">This is button</p>
+
+    <div class="button-group">
+        <button class="btn-group" onclick="btnGroup()">Button 1</button>
+        <button class="btn-group" onclick="btnGroup()">Button 2</button>
+        <button class="btn-group" onclick="btnGroup()">Button 3</button>
+       
+    </div>
+
+    <h3>ex:5 make a form and run</h3>
+    <h3>ex:6 make input to uppercase letter onchange</h3>
+    <q>type a letter on input field it would be turn to capital letter</q>
+    <p>from event listener</p>
+
+    <form action="" method="" name="myFrom" onsubmit="fromFunction()">
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="inputId" oninput="myInput()">
+        <input type="submit" value="submit">
+        <br>
+        <br>
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="inputId2" onchange="changeInput()">
+        <input type="submit" value="submit">
+
+    </form>
+
+    <h3>ex: 7</h3>
+    <p>mouse over and mouse out on button</p>
+    <button id="button" onmouseover="mouseOv()" onmouseout="mouseOt()" style="background-color: #000; color: #fff; padding: 15px;">Mouse Over  </button>
+
+    <h3>ex: 8</h3>
+    <p> mousedown and mouseup on button</p>
+    <button id="button2" onmousedown="mouseDw()" onmouseup="mouseUp()" style="background-color: #a05959; color: #fff; padding: 15px;"> click me   </button>
+
+    <h3>ex: 9</h3>
+    <p>try addeventlistener </p>
+    <button id="addBtn">click it</button>
+    <p id="demo"></p>
+
+    <h3>ex: 10</h3>
+    <p>remove event listener</p>
+    <div class="myDiv" id="myDiv">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus non distinctio vero quis nam ut aut labore ratione sint quos assumenda pariatur illum sequi cumque, reiciendis culpa perferendis est aspernatur?</p>
+        <button id="remove" onclick="removeMouse()">remove</button>
+        <p id="removeDemo"></p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="event.js"></script>
+</body>
+</html>
