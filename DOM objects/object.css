@@ -3,6 +3,10 @@ background-color: aqua;
 display: flex;
 flex-direction: column;
 max-width: 600px;
+
+}
+pre{
+    width: 600px;
 }
 .input-div input{
    

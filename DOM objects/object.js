@@ -44,3 +44,13 @@ function selectChange(s){
  console.log(s.target.value);
 }
 
+
+// Ex:4
+const inputMassage = document.querySelector("#textMessage");
+// console.log(inputMassage)
+
+inputMassage.addEventListener("change", textareaFunction);
+function textareaFunction(e){
+    console.log(e);
+    console.log(e.target.value);
+}
