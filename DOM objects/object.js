@@ -18,7 +18,7 @@
   };
 
 
-//   ex:2
+//   Ex:2
 const programms = document.querySelectorAll("input[name=program]");
 // console.log(programms);
 // add multiple elements 
@@ -32,5 +32,15 @@ function checkedFunction(e){
     }else{
         console.log("unchecked")
     }
+}
+
+// Ex:3
+
+const inputDeparment = document.getElementById("department");
+// console.log(inputDeparment);
+
+inputDeparment.addEventListener("change", selectChange);
+function selectChange(s){
+ console.log(s.target.value);
 }
 
