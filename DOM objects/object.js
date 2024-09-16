@@ -40,8 +40,8 @@ const inputDeparment = document.getElementById("department");
 // console.log(inputDeparment);
 
 inputDeparment.addEventListener("change", selectChange);
-function selectChange(s){
- console.log(s.target.value);
+function selectChange(e){
+ console.log(e.target.value);
 }
 
 
