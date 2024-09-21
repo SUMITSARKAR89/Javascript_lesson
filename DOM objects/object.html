@@ -22,6 +22,7 @@
        6. DragEvent object
     </pre>
     <hr>
+    <h1>Change Event</h1>
     <h3>Ex:1</h3>
     <label for="name">Name:
         <input type="text" id="name" name="name">
@@ -41,6 +42,8 @@
       
     </div>
     <hr>
+
+
     <h3>Ex: 3</h3>
     <h4>select a Department </h4>
     <label for="department">select your Department:
@@ -53,10 +56,39 @@
     </label>
 
     <hr>
-    <h3>Ex: 4</h3>
-    <h4>Using textarea</h4>
+     <h3>Ex: 4</h3>
+     <h4>Using textarea</h4>
     <label for="message">Massage</label><br>
     <textarea name="message" id="textMessage" cols="30" rows="10">type your message</textarea>
+    <hr>  
+
+    <h1>Submit Events</h1>
+    <h3>Ex: 5</h3>
+    <h4>form </h4>
+    <form action="">
+        <div class="input-form">
+            <label for="name">
+                Name:
+                <input type="text" name="name" id="name" required autofocus>
+            </label>
+        </div>
+        <div class="input-form">
+            <label for="email">
+               email :
+                <input type="email" name="email" id="email">
+            </label>
+        </div>
+        <div class="input-form">
+            <label for="password">
+                password:
+                <input type="password" name="password" id="password" minlength="5" maxlength="6">
+            </label>
+        </div>
+        <div class="input-form">
+            <input type="submit" value="signUp">
+        </div>
+
+    </form>
 
     
     <script src="object.js"></script>

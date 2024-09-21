@@ -39,9 +39,9 @@ function checkedFunction(e){
 const inputDeparment = document.getElementById("department");
 // console.log(inputDeparment);
 
-inputDeparment.addEventListener("change", selectChange);
-function selectChange(e){
- console.log(e.target.value);
+inputDeparment.addEventListener("change", changeSelect);
+function changeSelect(m){
+ console.log(m.target.value);
 }
 
 
@@ -54,3 +54,35 @@ function textareaFunction(e){
     console.log(e);
     console.log(e.target.value);
 }
+
+// Ex:5
+
+const form = document.querySelector("form");
+const name = form.querySelector(".input-form #name");
+const email = form.querySelector(".input-form #email");
+const password = form.querySelector(".input-form #password");
+//  console.log(name, email, password)
+
+form.addEventListener("submit", submitHandelar);
+
+function submitHandelar(e){
+    e.preventDefault();
+    // console.log("submit");
+    // console.log(name.value);
+    // console.log(email.value);
+    // console.log(password.value);
+
+    const userInfo = {
+        name: name.value,
+        email: email.value,
+        password: password.value
+        
+    }
+    console.log(userInfo); //print value   
+
+    //clear value
+    name.value = "",
+    email.value = "",
+    password.value = ""
+}
+
