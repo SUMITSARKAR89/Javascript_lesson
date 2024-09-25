@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object event listener</title>
+    <link rel="stylesheet" href="object.css">
+
+</head>
+<body>
+    <h3>Event Object</h3>
+    <pre style="width: 100%; margin: auto;" >
+       1. Event Object:
+       a. event type: 
+       change, submit, load, unload, open, play, 
+       canplay, pause, playing, 
+       progress, ended, resize, scroll, toggle etc.
+       b. property type:
+       type, target, preventDefault()
+       2. MouseEvent object
+       3. KeyboardEvent object
+       4. FocusEvent object
+       5. ClipboardEvent object
+       6. DragEvent object
+    </pre>
+    <hr>
+    <h1>Change Event</h1>
+    <h3>Ex:1</h3>
+    <label for="name">Name:
+        <input type="text" id="name" name="name">
+    </label>
+    <hr>
+
+    <h3>Ex: 2 </h3>
+    <div class="">
+        <h4>Programming language</h4>
+
+        <div class="input-div">
+            <label for="program"><input type="checkbox" name="program" id="" value="html">HTML</label>
+            <label for="program"><input type="checkbox" name="program" id="" value="css">CSS</label>
+            <label for="program"><input type="checkbox" name="program" id="" value="java">JAVA</label>
+            <label for="program"><input type="checkbox" name="program" id="" value="react">React</label>
+        </div>
+      
+    </div>
+    <hr>
+
+
+    <h3>Ex: 3</h3>
+    <h4>select a Department </h4>
+    <label for="department">select your Department:
+        <select name="deparment" id="department">
+            <option value="ssc">SSC</option>
+            <option value="hsc">HSC</option>
+            <option value="bba">BBA</option>
+            <option value="mba">MBA</option>
+        </select>
+    </label>
+
+    <hr>
+     <h3>Ex: 4</h3>
+     <h4>Using textarea</h4>
+    <label for="message">Massage</label><br>
+    <textarea name="message" id="textMessage" cols="30" rows="10">type your message</textarea>
+    <hr>  
+
+    <h2>Submit Events</h2>
+    <h3>Ex: 5</h3>
+    <h4>form </h4>
+    <form action="">
+        <div class="input-form">
+            <label for="name">
+                Name:
+                <input type="text" name="name" id="name" required autofocus>
+            </label>
+        </div>
+        <div class="input-form">
+            <label for="email">
+               email :
+                <input type="email" name="email" id="email">
+            </label>
+        </div>
+        <div class="input-form">
+            <label for="password">
+                password:
+                <input type="password" name="password" id="password" minlength="5" maxlength="6">
+            </label>
+        </div>
+        <div class="input-form">
+            <input type="submit" value="signUp">
+        </div>
+
+    </form>
+    <br><hr><hr>
+
+    <h1 style="text-align: center;">Audio Events/ video ebents</h1>
+    <pre>audio event=
+        canplay, play, progress-waiting , 
+        playnig, pause, ended, volumechange
+    </pre> 
+    <h3>Ex:1</h3>
+    <h4>video event</h4>
+    <video width="500" controls muted>
+        <source src="imag/“Filmmaking_is_a_chance_to_live_many_lifetimes.”.mp4" type="video/mp4">
+    </video>
+    <br><hr><hr>
+    <h1 style="text-align: center;">Others events</h1>
+    <pre>
+
+        Load, unload, scroll, resize, toggle-details
+    </pre> 
+
+    <h3>Ex:1</h3>
+    <h4>Toggle</h4>
+    <details>
+        <summary>Here is Details</summary>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, in veniam obcaecati libero accusantium culpa!</p>
+    </details>
+
+
+    
+    <script src="object.js"></script>
+    <script src="audioevent.js"></script>
+    <script src="otherevent.js"></script>
+</body>
+</html>
