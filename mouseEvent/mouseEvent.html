@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Event object</title>
+</head>
+<style>
+    pre{
+        color: green;
+        font-size: 1rem;
+    }
+    #mouseEvent, 
+    #mouseEvent2,
+    #mouseEvent3{
+        height: 20vh;
+        width: 500px;
+        background-color: blueviolet;
+    }
+    #mouseEvent2{
+
+        background-color: blue;
+        transition: 0.5s;
+    }
+    #mouseEvent3{
+        background-color: chartreuse;
+    }
+    #mouseEvent p , 
+    #mouseEvent2 p, 
+    #mouseEvent3 p{
+        color: aliceblue;
+        padding: 15px;
+        text-align: center;
+        
+    }
+    img{
+        float: right;
+        margin: 10% 0;
+    }
+    .allButton{
+        text-align: center;
+    }
+</style>
+<body>
+    <pre>
+        <!-- <html>,<head>,<meta>,<title>, <br>, <style>, <iframe>, <script>, <param>, <base>, <bdo> does not work -->
+        onclick, onblclick, onmousedown, onmouseup,
+        onmouseenter, onmouseleave, onmousemove, onmouseover
+    </pre>
+
+    <h1 style="text-align: center;">use of Mouse Event</h1>
+    <h3>Ex:1</h3>
+    <div id="mouseEvent">
+        <p>This is a peragraph</p>
+    </div>
+    <img src="img/ss.png" alt="">
+    <br><hr>
+
+
+    <h3>Ex:2</h3>
+    <div id="mouseEvent2">
+        <p id="p">mouse enter/ mouse out</p>
+        
+    </div>
+    <br><hr>
+    <h3>EX:3</h3>
+    <div id="mouseEvent3" class="mouseEvent3">
+        <p style="color: red;">This is peragraph</p>
+        <div class="allButton">
+            <button class="btn">button1</button>
+            <button class="btn">button2</button>
+            <button class="btn">button3</button>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="mouseEvent.js"></script>
+</body>
+</html>
