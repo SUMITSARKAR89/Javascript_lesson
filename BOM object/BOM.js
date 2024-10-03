@@ -86,3 +86,9 @@ function promptFound(){
     document.body.appendChild(h1);
 }
 promptFound();
+
+
+// Ex:6
+function confirm2(){
+
+}
