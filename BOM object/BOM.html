@@ -19,6 +19,24 @@
             border-radius: 5px;
             cursor: pointer;
         }
+        .settime{
+            background-color: rgb(133, 75, 75);
+            max-width: 600px;
+            padding: 2rem;
+        }
+        .save-btn, .save-btn2, .start, .stop{
+            padding: 2% 5%;
+            border: 1px solid green;
+            outline: 0;
+            background-color: bisque;
+            cursor: pointer;
+        }
+        .start-text{
+            font-size: 2rem;
+            font-weight: bold;
+            color: #fff;
+        }
+        
 </style>
 <body>
     <pre>
@@ -66,9 +84,93 @@
     <h4>confirm part 2</h4>
     <button onclick="confirm2()">press button</button>
     <p id="confirm"></p>
+    <hr>
+    <!-- ================================================== -->
+     <pre>
+        Timing Event:
+        setTimeOut()
+        setInterval()
+        clearTimeOut()
+        clearInterval()
+     </pre>
+     <h3>Ex:7</h3>
+     <h4>SetTimeOut</h4>
+
+     <div class="settime">
+        <button class="save-btn">Save</button>
+        <p class="save-text"></p>
+     </div><hr>
+
+     <h3>Ex:8</h3>
+     <h4>SetInterval</h4>
+
+     <div class="settime">
+        <button class="save-btn2">Save</button>
+        <p class="save-text2"></p>
+     </div>
+     <hr>
+     <h3>Ex:9</h3>
+     <h4>Clock</h4>
+
+     <div class="settime">
+        <button class="start">Start</button>
+        <p class="start-text"></p>
+        <button class="stop">Stop</button>
+     </div>
 
 
-    <script src="BOM.js"></script>
+     <script>
+        /*setTimeout(setTime, 2000);
+        function setTime (){
+            console.log("hello")
+        }*/
+
+        const start = document.querySelector(".start");
+        const startText = document.querySelector(".start-text");
+        const stop = document.querySelector(".stop")
+        
+        stop.addEventListener("click", fucntionEnd);
+
+        function fucntionEnd(){
+            clearTimeout(()=>{
+                
+            })
+        }
+
+        start.addEventListener("click", funtionStart);
+
+        function funtionStart(){
+            let date = new Date();
+            let hours = date.getHours();
+            let minutes = date.getMinutes();
+            let seconds = date.getSeconds();
+
+            // for formet start 
+            minutes = formetTime(minutes);
+            seconds = formetTime(seconds);
+            // for formet end
+
+            const time = hours + ":" + minutes + ":" + seconds; 
+            startText.textContent = time;
+
+            setInterval(funtionStart, 1000);
+
+        
+        }
+
+        function formetTime(value){
+            if(value < 10){
+                value = "0" + value;
+            }
+            return value;
+
+
+        }
+       
+     </script>
+
+
+    <!-- <script src="BOM.js"></script> -->
     
 </body>
 </html>

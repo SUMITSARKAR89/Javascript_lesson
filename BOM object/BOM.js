@@ -42,7 +42,7 @@ visitBtn.addEventListener("click", ()=>{
 
 // ==============================================
 // Ex:3 
-// alert("welcome to BOM methods");
+ alert("welcome to BOM methods");
 // ===============================================
 
 // Ex:4 
@@ -69,7 +69,7 @@ function promptFound(){
     let text;
 
     let value = prompt("Enter Your Name ");
-    let result =  value.toUpperCase();
+    // let result =  value.toUpperCase();
     if (result === null || result === " "){
         text = "No name found";
 
@@ -79,7 +79,7 @@ function promptFound(){
     }
 
     let h1 = document.getElementById("h1");
-    h1.style.color ="red";
+    // h1.style.color ="red";
 
     let textNode = document.createTextNode(text);
     h1.appendChild(textNode);
@@ -91,4 +91,42 @@ promptFound();
 // Ex:6
 function confirm2(){
 
+  let con;
+  if (confirm("press one button")){
+    con = "you pressed 'OK'";
+  }else{
+    con = "you pressed cancel";
+  }
+  document.getElementById("confirm").innerHTML = con;
+}
+
+// Ex:7
+
+const saveBtn = document.querySelector(".save-btn");
+const saveText = document.querySelector(".save-text");
+
+saveBtn.addEventListener("click", functionSave);
+
+function functionSave(){
+    saveText.textContent = "user registration successfully";
+
+    setTimeout(()=>{
+        saveText.textContent = ""
+    }, 2000);
+}
+
+// Ex:8
+const saveBtn2 = document.querySelector(".save-btn2");
+const saveText2 = document.querySelector(".save-text2");
+saveText2.style.color = "white";
+
+saveBtn2.addEventListener("click", functionInterval);
+function functionInterval(){
+    let count = 1;
+    saveText2.textContent = count;
+    setInterval(()=>{
+        count++;
+        saveText2.textContent = count;
+
+    }, 1000);
 }
