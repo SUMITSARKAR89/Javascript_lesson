@@ -57,6 +57,7 @@ function confirmFound (){
   }
 }
 confirmFound()
+// ===============================================
 
 // EX:5
 
@@ -87,6 +88,7 @@ function promptFound(){
 }
 promptFound();
 
+// ===============================================
 
 // Ex:6
 function confirm2(){
@@ -100,6 +102,7 @@ function confirm2(){
   document.getElementById("confirm").innerHTML = con;
 }
 
+// ===============================================
 // Ex:7
 
 const saveBtn = document.querySelector(".save-btn");
@@ -115,6 +118,7 @@ function functionSave(){
     }, 2000);
 }
 
+// ===============================================
 // Ex:8
 const saveBtn2 = document.querySelector(".save-btn2");
 const saveText2 = document.querySelector(".save-text2");
@@ -130,3 +134,87 @@ function functionInterval(){
 
     }, 1000);
 }
+// ===============================================
+
+// Ex:9
+const start = document.querySelector(".start");
+const startText = document.querySelector(".start-text");
+const stop = document.querySelector(".stop")
+
+
+
+start.addEventListener("click", funtionStart);
+
+function funtionStart(){
+    let date = new Date();
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds();
+
+    // for formet start 
+    minutes = formetTime(minutes);
+    seconds = formetTime(seconds);
+    // for formet end
+
+    const time = hours + ":" + minutes + ":" + seconds; 
+    startText.textContent = time;
+
+    setInterval(funtionStart, 1000);
+}
+
+// for formet 
+function formetTime(value){
+    if(value < 10){
+        value = "0" + value;
+    }
+    return value;
+
+
+}
+
+// Ex:10 
+const startBtn = document.querySelector(".start");
+const startText = document.querySelector(".start-text");
+
+startBtn.addEventListener("click", startTime);
+
+function startTime(){
+    let hours =  new Date().getHours();
+    let minutes =  new Date().getMinutes();
+    let seconds =  new Date().getSeconds();
+
+    // formet hours 
+    minutes = fometTime(minutes);
+    seconds = fometTime(seconds);
+   // formet hours 
+    
+
+    
+    if(hours>12){
+        let newHours = hours-12;
+        let periods = "PM"
+    }else{
+        newHours = hours;
+        periods = "AM"
+    }
+
+    // formet hours 
+    newHours = fometTime(newHours)
+    // formet hours 
+
+    const time = "Todays time: " + newHours + ":" + minutes + ":" + seconds + ":" + periods;
+    startText.textContent = time;
+
+    setInterval(startTime, 1000)
+}
+
+function fometTime (value){
+    if(value<10){
+        value = "0" + value
+    }
+    return value;
+}
+
+
+
+
