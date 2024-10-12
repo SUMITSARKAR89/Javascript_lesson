@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hosting and strick</title>
+    <style>
+        pre{
+            color: green;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <pre>
+        1. ES6 syntax
+        <ul>
+        ES6 variable => var, let, const(scope, redeclaration, value assign)
+        Templete Literals
+        Hosting & strick mode
+        Default and Rest parameter
+        Spread operator
+        loop (for , of)
+        object literal
+        </ul>
+        2. Arrow Function
+        3. Destructuring
+        <ul>
+        Array & Object destructuring
+        </ul>
+    </pre>
+    <h1 style="text-align: center; font-size: 2rem;">Example of ES6</h1>
+    <h3>Ex:1</h3>
+    <h4>hosting and stick</h4><hr>
+    <h3>Ex:2</h3>
+    <h4>spered perameter</h4><hr>
+    <h3>Ex:3</h3>
+    <h4>Rest perameter</h4><hr>
+    <h3>Ex:4</h3>
+    <h4>spered operator</h4><hr>
+    <h3>Ex:5</h3>
+    <h4>Object leteral</h4><hr>
+    <h3>Ex:6</h3>
+    <h4>loop (for in, for of)</h4><hr>
+
+    <script>
+        // by using for of loop ES6
+        const aName = ["sumit", "bappy", "pavel", "rana"];
+        for(let abc of aName){
+            // console.log(abc);
+        }
+       
+        // by using for in loop Es6 
+
+        let nameInfo = {
+            name: "sumit sarkar",
+            Id : "CMBD-246/06",
+            phonenumber : 1914738110
+        }
+        for(let result in nameInfo){
+            // console.log(result) //this is for the value
+            // console.log(nameInfo[result]) // this is for result of value
+            console.log(`${result} : ${nameInfo[result]}`)//this is for whole value and result
+        }
+    </script>
+
+    
+
+    <!-- <script src="host.js"></script> -->
+    
+</body>
+</html>
