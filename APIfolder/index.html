@@ -8,9 +8,9 @@
         pre{
             font-size: 1.5rem;
             color: green;
-            font-weight: 600;
+            font-weight: 500;
         }
-        h3{
+        h3, b{
             color: blue;
         }
         h1{
@@ -18,6 +18,7 @@
             font-size: 2rem;
         }
     </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js" integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <pre>
@@ -46,7 +47,7 @@
    To create multiple Request
     </pre>
     <hr>
-
+<!-- ======================================================== -->
     <h1>Fetch() Api</h1>
     <pre>
         fetch() has replaced XMLHttpRequest
@@ -86,12 +87,113 @@
     <h3>DELETE DATA  async await</h3>
     <hr>
 
+<!-- ============================================================ -->
+    <h1>axios Methods</h1>
+    
+    <pre>
+    axios is a js library
+    it helps to make request from browser
+    
+    <b>Benefits of axious</b>
+    + very easy to use
+    + it supports all medern browser including IE
+    + it returns promises
+    + throw error brilliantly
+    + No need to set header cause axios id intelligent
+
+
+    <b>axious configs</b>
+    axios(config)
+    axios (url, [config])
+    axios.get(url, [config])
+    axios.post(url, [config])
+    axios.put(url, [config])
+    axios.patch(url, [config])
+    axios.delete(url, [config])
+
+    <b>axious return response object</b>
+    data, status, statusText, header configaration
+
+    </pre>
+    <hr>
+
+    <h2>Example :1</h2>
+    <h3>get axious</h3>
+    <hr>
+    <h2>Example :2</h2>
+    <h3>post axious</h3>
+    <hr>
+    <h2>Example :3</h2>
+    <h3>put axious</h3>
+    <hr>
+    <h2>Example :4</h2>
+    <h3>patch axious</h3>
+    <hr>
+    <h2>Example :5</h2>
+    <h3>delete axious</h3>
+    <hr>
+    <h2>Make Request</h2>
+    <script>
+        // const makeRequest = async (config) => {
+        //     return await axios(config)
+        // }
+
+        // const getData = () => {
+        //     makeRequest("https://jsonplaceholder.typicode.com/posts")
+        //     .then((res) => console.log(res.data))
+        //     .catch((err) => console.log(err))
+
+        // }
+        // getData();
+
+        // const makeRequest = async (config) => {
+        //     return await axios(config)
+        // }
+
+        // const createData = () => {
+        //     makeRequest({
+        //         url: "https://jsonplaceholder.typicode.com/posts" ,
+        //         method: "post",
+        //         data: JSON.stringify({
+        //         title: 'foo',
+        //         body: 'bar',
+        //         userId: 1,
+        //      }),
+        //     })
+        //     .then((res) => console.log(res.data))
+        //     .catch((err) => console.log(err))
+
+        // }
+        // createData();
+
+
+        const makeRequest = async (config) => {
+            return await axios(config)
+        }
+
+        const updateData = () => {
+            makeRequest({
+                url: "https://jsonplaceholder.typicode.com/posts/1" ,
+                method: "put",
+                data: JSON.stringify({
+                title: 'sumit sarkar',
+                body: 'bar',
+                userId: 1,
+             }),
+            })
+            .then((res) => console.log(res.data))
+            .catch((err) => console.log(err))
+
+        }
+        updateData();
+    </script>
 
 
     
-<!-- 
-    <script src="api.js"></script> -->
-    <script src="fetch.js"></script>
+
+    <!-- <script src="axios.js"></script> -->
+    <!-- <script src="api.js"></script> 
+    <script src="fetch.js"></script> -->
 </body>
 </html>
 
