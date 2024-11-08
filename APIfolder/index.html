@@ -18,7 +18,13 @@
             font-size: 2rem;
         }
     </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js" integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- THIS IS AXIOUS CDN  -->
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js" integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+    <!-- THIS IS JQUERY CDN  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <pre>
@@ -119,75 +125,46 @@
 
     <h2>Example :1</h2>
     <h3>get axious</h3>
+    <p>axios.get</p>
     <hr>
     <h2>Example :2</h2>
     <h3>post axious</h3>
+    <p>axios.post</p>
     <hr>
     <h2>Example :3</h2>
     <h3>put axious</h3>
+    <p>axios put</p>
     <hr>
     <h2>Example :4</h2>
     <h3>patch axious</h3>
+    <p>axios.patch</p>
     <hr>
     <h2>Example :5</h2>
     <h3>delete axious</h3>
+    <p>axios.delete</p>
     <hr>
-    <h2>Make Request</h2>
+
+
+    <h2>Example 6</h2>
+    <h3>axios methods use on ASYNC-AWAIT</h3>
+    <hr>
+
+    <!-- ============================================================ -->
+    <h1>Jquery Methods</h1>
+    
+    <pre>
+    add Jquery library cdn
+    ajx- asynchorous javascript and xml
+
+    </pre>
+    <hr>
+
+    <h2>Example : 1</h2>
+    <h3>t</h3>
+    <hr>
     <script>
-        // const makeRequest = async (config) => {
-        //     return await axios(config)
-        // }
-
-        // const getData = () => {
-        //     makeRequest("https://jsonplaceholder.typicode.com/posts")
-        //     .then((res) => console.log(res.data))
-        //     .catch((err) => console.log(err))
-
-        // }
-        // getData();
-
-        // const makeRequest = async (config) => {
-        //     return await axios(config)
-        // }
-
-        // const createData = () => {
-        //     makeRequest({
-        //         url: "https://jsonplaceholder.typicode.com/posts" ,
-        //         method: "post",
-        //         data: JSON.stringify({
-        //         title: 'foo',
-        //         body: 'bar',
-        //         userId: 1,
-        //      }),
-        //     })
-        //     .then((res) => console.log(res.data))
-        //     .catch((err) => console.log(err))
-
-        // }
-        // createData();
-
-
-        const makeRequest = async (config) => {
-            return await axios(config)
-        }
-
-        const updateData = () => {
-            makeRequest({
-                url: "https://jsonplaceholder.typicode.com/posts/1" ,
-                method: "put",
-                data: JSON.stringify({
-                title: 'sumit sarkar',
-                body: 'bar',
-                userId: 1,
-             }),
-            })
-            .then((res) => console.log(res.data))
-            .catch((err) => console.log(err))
-
-        }
-        updateData();
+        console.log(window)
     </script>
-
 
     
 
