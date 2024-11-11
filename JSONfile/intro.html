@@ -17,6 +17,9 @@
             text-align: center;
             font-size: 2rem;
         }
+        h2{
+            color: red;
+        }
     </style>
 </head>
 <body>
@@ -125,9 +128,164 @@
         In this website you have to check  the data  Validity,
         Data Minify,
         XML or lots of extra feature
+
+
+    </pre>
+    <hr><hr>
+
+    <!-- ========================================================== -->
+    <pre>
+        <b>JSON Path</b>
+    </pre>
+
+    <h1>How to use JSON Path </h1>
+    <h2>Part -4 </h2>
+    <h3>https://jsonpathfinder.com/</h3>
+    <pre>
+        How to 
+            1. Access
+            2. Modify
+            3. Delete
+            4. Convert
+        JSON Data
+    </pre>
+    <pre>
+        <b>Access</b>
+        data.name
+        OR/
+        data["name"]
+    </pre>
+    <h3>Example:1 </h3>
+    <h4>Access Value</h4>
+    <pre>
+        <b>Student Info</b>
+        let studentInfo ={
+            "students" :[
+                {
+                    "name" : "Sumit",
+                    "age"  : 30,
+                    "department" : "CSE",
+                    "subject" : ["HTMl", "CSS" , "JavaScript"]
+                },
+                {
+                    "name" : "Tanveer",
+                    "age"  : 32,
+                    "department" : "BBA",
+                    "subject" : ["ECO", "MGT" , "SEI"]
+                }
+            ]
+        }
+
+
+        <b>To ACCESS some value</b>
+
+        studentInfo.students[0].name <b>=sumit</b>
+        studentInfo.students[1].age <b>= 32</b>
+        studentInfo.students[0].subject[1] <b>= CSS</b>
+        studentInfo.students[1].subject[0] <b>= ECo</b>
+
+    </pre>
+    <hr>
+
+    <h3>Example:2 </h3>
+    <h4>Modify value</h4>
+    <pre>
+        <b>Student Info</b>
+        let studentInfo ={
+            "students" :[
+                {
+                    "name" : "Sumit",
+                    "age"  : 30,
+                    "department" : "CSE",
+                    "subject" : ["HTMl", "CSS" , "JavaScript"]
+                },
+                {
+                    "name" : "Tanveer",
+                    "age"  : 32,
+                    "department" : "BBA",
+                    "subject" : ["ECO", "MGT" , "SEI"]
+                }
+            ]
+        }
+
+
+        <b>To MODIFY some value</b>
+
+        studentInfo.students[0].name = BAPPY <b>=BAPPY</b>
+        studentInfo.students[1].age = 40 <b>= 40</b>
+        studentInfo.students[0].subject[1] = REACT JS <b>= react js</b>
         
 
     </pre>
+    <hr>
+
+    <h3>Example:3 </h3>
+    <h4>Delete value</h4>
+    <pre>
+        <b>Student Info</b>
+        let studentInfo ={
+            "students" :[
+                {
+                    "name" : "Sumit",
+                    "age"  : 30,
+                    "department" : "CSE",
+                    "subject" : ["HTMl", "CSS" , "JavaScript"]
+                },
+                {
+                    "name" : "Tanveer",
+                    "age"  : 32,
+                    "department" : "BBA",
+                    "subject" : ["ECO", "MGT" , "SEI"]
+                }
+            ]
+        }
+
+
+        <b>To DELETE some value</b>
+
+       delete studentInfo.students[0].name <b>deleted data</b>
+       delete studentInfo.students[1].age <b>deleted data</b>
+       delete studentInfo.students[0].subject[1] <b>deleted data</b>
+       delete studentInfo.students[1].subject[0] <b>deleted data</b>
+        
+
+    </pre>
+    <hr>
+
+    <h3>Example:4 </h3>
+    <h4>JSON path Finder and Conversion</h4>
+    <pre>
+        <b>to convert into JSON format</b> 
+        <pre>
+            client to server
+            JSON.stingify(js_object)
+        </pre>
+        <b>to convert into object</b> 
+        <pre> 
+            server to client
+            JSON.parse(json_data)
+        </pre>
+    </pre>
+    <hr><hr>
+    <!-- ==============================================================================
+      -->
+
+
+    <h1>JSON Schema</h1>
+    <h2>Part-5</h2>
+    <pre>
+      Describes a standard formet of JSON data
+      Validating client-submitted data
+
+    </pre>
+
     
+    <pre>
+        <b>JSON schema converter</b>
+        https://www.jsonschemavalidator.net/
+        https://www.liquid-technologies.com/online-json-to-schema-converter
+    </pre>
+
+    <script src="index.js"></script>
 </body>
 </html>

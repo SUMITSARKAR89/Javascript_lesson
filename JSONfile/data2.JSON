@@ -1,5 +1,57 @@
-{
-    "Students": [
+ {
+    "students": [
+      {
+        "name": "sumit sarkar",
+        "middlename": null,
+        "age": 32,
+        "cgpa": 3.45,
+        "isRegisterd": true,
+        "languages": [
+          "Bengali",
+          "English",
+          "Hindi"
+        ],
+        "department": [
+          {
+            "subject": "CSE",
+            "isPassed": true,
+            "totalMark": 65
+          },
+          {
+            "subject": "BBA",
+            "isPassed": true,
+            "totalMark": 82
+          }
+        ]
+      },
+      {
+        "name": "tanveer Islam",
+        "middlename": "pavel",
+        "age": 30,
+        "cgpa": 3.9,
+        "isRegisterd": true,
+        "languages": [
+          "Bengali",
+          "English",
+          "Hindi",
+          "urdhu"
+        ],
+        "department": [
+          {
+            "subject": "CSE",
+            "isPassed": true,
+            "totalMark": 85
+          },
+          {
+            "subject": "BBA",
+            "isPassed": true,
+            "totalMark": 80
+          }
+        ]
+      }
+    ],
+
+    "studentInfo": [
       {
         "name": "sumit sarkar",
         "middlename": null,
