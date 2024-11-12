@@ -1,16 +1,16 @@
-// // 	//Access
-//   const data = require("./data2.json");
-//   console.log(data.students[0]);
-//   console.log(data.students[0].languages[1]);
+ 	//Access
+  const data = require("./data2.json");
+  console.log(data.students[0]);
+  console.log(data.students[0].languages[1]);
 
-//     //Modify
-//     data.students[0].name = "bappy";
-//     console.log(data.students[0].name);
+    //Modify
+    data.students[0].name = "bappy";
+    console.log(data.students[0].name);
 
 
-//     //Delete
-//     delete data.students[0].name;
-//     console.log(data);
+    //Delete
+    delete data.students[0].name;
+    console.log(data);
 
 
    //conversion
@@ -20,9 +20,9 @@
     console.log(JSON.parse('{"name" : "belal" }')); /*server to client */
 
 
-// // ======================================================
-// // USE LOOP 
-// for(x in data){
-//     console.log(x);
-//     console.log(data[x]);
-// }
+// ======================================================
+// USE LOOP 
+for(x in data){
+    console.log(x);
+    console.log(data[x]);
+}
